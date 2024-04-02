@@ -1,11 +1,12 @@
-const express = require("express")
-const cors = require("cors")
+const express = require("express");
+const cors = require("cors");
 
-require("dotenv").config()
+require("dotenv").config();
 
-const app = express()
+const app = express();
 
-app.request(express.json())
-app.use(cors())
 
-module.exports = app
+app.use(express.json());
+app.use(cors());
+
+module.exports = app;
